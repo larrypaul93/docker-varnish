@@ -11,4 +11,4 @@ RUN \
 
 EXPOSE 80 6082
 
-CMD ["varnishd", "-F", "-a", ":80", "-T", ":6082", "-f", "/etc/varnish/default.vcl", "-s", "malloc,256m"]
+CMD ["varnishd", "-F", "-a", ":80", "-T", ":6082", "-f", "/config/varnish.vcl", "-s", "malloc,10G"]
